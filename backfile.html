@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Score Sheet</title>
+    <link rel="stylesheet" href="signin.css">
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Score Pie Chart</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .credit-score-container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .chart {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 20px auto;
+        }
+
+        /* Circular background */
+        .chart .circle-bg {
+            fill: none;
+            stroke: #f0f0f0;
+            stroke-width: 20;
+        }
+
+        /* Circular progress based on score */
+        .chart .circle {
+            fill: none;
+            stroke: #4caf50;
+            stroke-width: 20;
+            stroke-dasharray: 88.24 100; /* 88.24% of the circle represents a score of 750 */
+            stroke-linecap: round;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+        }
+
+        .credit-score-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .credit-score-value {
+            font-size: 36px;
+            color: #4caf50;
+        }
+
+        .credit-score-description {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="credit-score-container">
+        <h1>Your Credit Score</h1>
+        <div class="chart">
+            <svg width="150" height="150">
+                <!-- Background circle -->
+                <circle class="circle-bg" cx="75" cy="75" r="60" />
+                <!-- Progress circle -->
+                <circle class="circle" cx="75" cy="75" r="60" />
+            </svg>
+            <div class="credit-score-text">
+                <div class="credit-score-value">750</div>
+                <div>of 850</div>
+            </div>
+        </div>
+        <div class="credit-score-description">Excellent Credit</div>
+    </div>
+</body>
+</html>
+
+<body>
+    <div class="credit-sheet">
+        <h1>Credit Score Report</h1>
+        
+        <div class="section">
+            <h2>Personal Details</h2>
+            <table>
+                <tr>
+                    <td><strong>Name:</strong></td>
+                    <td>srimathi</td>
+                </tr>
+                <tr>
+                    <td><strong>Address:</strong></td>
+                    <td>west car street morappur</td>
+                </tr>
+                <tr>
+                    <td><strong>Phone:</strong></td>
+                    <td>(123) 456-7890</td>
+                </tr>
+                <tr>
+                    <td><strong>Email:</strong></td>
+                    <td>srimathi22082005@email.com</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Credit Score Details</h2>
+            <table>
+                <tr>
+                    <td><strong>Credit Score:</strong></td>
+                    <td>750</td>
+                </tr>
+                <tr>
+                    <td><strong>Credit Rating:</strong></td>
+                    <td>Excellent</td>
+                </tr>
+                <tr>
+                    <td><strong>Last Checked:</strong></td>
+                    <td>October 7, 2024</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Bank Details</h2>
+            <table>
+                <tr>
+                    <td><strong>Bank Name:</strong></td>
+                    <td>Bank of Springfield</td>
+                </tr>
+                <tr>
+                    <td><strong>Account Number:</strong></td>
+                    <td>1234567890</td>
+                </tr>
+                <tr>
+                    <td><strong>Branch Code:</strong></td>
+                    <td>12345</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Additional Information</h2>
+            <table>
+                <tr>
+                    <td><strong>Loan History:</strong></td>
+                    <td>No outstanding loans</td>
+                </tr>
+                <tr>
+                    <td><strong>Mortgage:</strong></td>
+                    <td>Fully paid</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
